@@ -1,0 +1,2 @@
+copy "C:\Users\matas\Documents\GitHub\MissionPlanner_Plugins\MissionPlanner.Plugins.Suopis2Control\bin\Debug\MissionPlanner.Plugins.Suopis2Control.dll" "C:\Program Files (x86)\Mission Planner\plugins"
+copy "C:\Users\matas\Documents\GitHub\MissionPlanner_Plugins\MissionPlanner.Plugins.Suopis2Control\bin\Debug\MissionPlanner.Plugins.Suopis2Control.pdb" "C:\Program Files (x86)\Mission Planner\plugins"

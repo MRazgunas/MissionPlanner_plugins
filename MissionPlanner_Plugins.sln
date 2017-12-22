@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner.Plugins.GimbalControl", "MissionPlanner.GimbalControl\MissionPlanner.Plugins.GimbalControl.csproj", "{70F83A3F-982F-4548-BE3D-4739884505C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner.Plugins.GimbalTest", "MissionPlanner.Plugins.GimbalTest\MissionPlanner.Plugins.GimbalTest.csproj", "{09051A38-61E5-41C4-8F82-5B9831644CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner.Plugins.Suopis2Control", "MissionPlanner.Plugins.Suopis2Control\MissionPlanner.Plugins.Suopis2Control.csproj", "{E1E1F290-7502-44AF-A2DB-46B9B7BB9025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70F83A3F-982F-4548-BE3D-4739884505C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F83A3F-982F-4548-BE3D-4739884505C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F83A3F-982F-4548-BE3D-4739884505C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F83A3F-982F-4548-BE3D-4739884505C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09051A38-61E5-41C4-8F82-5B9831644CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09051A38-61E5-41C4-8F82-5B9831644CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09051A38-61E5-41C4-8F82-5B9831644CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09051A38-61E5-41C4-8F82-5B9831644CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1E1F290-7502-44AF-A2DB-46B9B7BB9025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E1F290-7502-44AF-A2DB-46B9B7BB9025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E1F290-7502-44AF-A2DB-46B9B7BB9025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E1F290-7502-44AF-A2DB-46B9B7BB9025}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
