@@ -31,18 +31,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GMap.NET.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\GMap.NET.Core.dll</HintPath>
+    </Reference>
     <Reference Include="MAVLink">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MAVLink.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MAVLink.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.exe</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.exe</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.ArduPilot">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.ArduPilot.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner.Comms">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.Comms.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.Comms.dll</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=38326cb7e06851fc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.Controls.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.0.1\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectInput.4.0.1\lib\net45\SharpDX.DirectInput.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,6 +87,10 @@
     <EmbeddedResource Include="GimbalControlButtons.resx">
       <DependentUpon>GimbalControlButtons.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

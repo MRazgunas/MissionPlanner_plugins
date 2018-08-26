@@ -16,8 +16,6 @@
         private ToolStripMenuItem configMenuItem;
         private GimbalControlButtons gmbControlWindow;
 
-        private Utilities.Settings config;
-
         public override bool Init()
         {
             return true;
@@ -28,17 +26,19 @@
             this.configMenuItem = new ToolStripMenuItem("Gimbal Control");
             configMenuItem.Click += ConfigMenuItem_Click;
             this.Host.FDMenuMap.Items.Add(configMenuItem);
-            config = this.Host.config;
 
-            gmbControlWindow = new GimbalControlButtons(config);
+            gmbControlWindow = new GimbalControlButtons(this);
             return true;
         }
 
         private void ConfigMenuItem_Click(object sender, EventArgs e)
         {
-            if (!gmbControlWindow.Visible)
+            if (gmbControlWindow != null)
             {
-                gmbControlWindow.Show();
+                if (!gmbControlWindow.Visible)
+                {
+                    gmbControlWindow.Show();
+                }
             }
         }
 

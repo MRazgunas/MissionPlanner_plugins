@@ -33,13 +33,13 @@ namespace MissionPlanner.Plugins.Suopis2Control
 
         private void btnLedOn_Click(object sender, EventArgs e)
         {
-            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_SET_SERVO, 7, 1900,
+            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_SET_SERVO, 11, 1900,
                 0, 0, 0, 0, 0, false);
         }
 
         private void btnLedOff_Click(object sender, EventArgs e)
         {
-            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_SET_SERVO, 7, 1100,
+            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_SET_SERVO, 11, 1100,
                 0, 0, 0, 0, 0, false);
         }
 

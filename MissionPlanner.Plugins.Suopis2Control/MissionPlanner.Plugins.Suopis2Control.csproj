@@ -32,10 +32,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MAVLink">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MAVLink.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MAVLink.dll</HintPath>
     </Reference>
     <Reference Include="MissionPlanner">
-      <HintPath>..\..\MissionPlanner\bin\Debug\MissionPlanner.exe</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.exe</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.ArduPilot">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.ArduPilot.dll</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.Comms">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.Comms.dll</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.Controls">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Mission Planner\MissionPlanner.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
