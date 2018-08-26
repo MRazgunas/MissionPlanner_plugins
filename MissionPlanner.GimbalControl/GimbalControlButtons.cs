@@ -115,6 +115,14 @@ namespace MissionPlanner.Plugins.GimbalControl
                     //    joystickEnable.Checked = false;
                     
                 }
+                if (state.Buttons[6])
+                {
+                    zoomIn_Click(null, null);
+                }
+                else if (state.Buttons[4])
+                {
+                    zoomOut_Click(null, null);
+                }
                 if (joystickEnable.Checked)
                 {
                     if (Math.Abs(state.Y - 32768) > 10)
@@ -153,12 +161,12 @@ namespace MissionPlanner.Plugins.GimbalControl
         private void zoomIn_Click(object sender, EventArgs e)
         {
             //Servo number, PWM, Cycle count, cycle time (seconds)
-            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_REPEAT_SERVO, 9.0f, 1000.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, false);
+            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_REPEAT_SERVO, 9.0f, 1000.0f, 1.0f, 0.1f, 0.0f, 0.0f, 0.0f, false);
         }
 
         private void zoomOut_Click(object sender, EventArgs e)
         {
-            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_REPEAT_SERVO, 9.0f, 2000.0f, 1.0f, 1.0f, 0.0f, 0.0f, 0.0f, false);
+            MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_REPEAT_SERVO, 9.0f, 2000.0f, 1.0f, 0.1f, 0.0f, 0.0f, 0.0f, false);
         }
 
         private void btnReatract_Click(object sender, EventArgs e)
